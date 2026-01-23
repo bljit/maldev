@@ -1,0 +1,1 @@
+$dll="calc_payload.dll" if (Test-Path $dll) { Add-Type -Path $dll Write-Host "OK - TestCalcDll loaded" -ForegroundColor Green} else { Write-Host "DLL not found: $dll" -ForegroundColor Red}
